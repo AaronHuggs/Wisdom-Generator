@@ -42,5 +42,4 @@ const GenerateWisdom = () => {
     return wisdom;
 }
 
-//Print wisdom to console.
-console.log(GenerateWisdom());
+
