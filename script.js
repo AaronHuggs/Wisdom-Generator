@@ -19,7 +19,7 @@ const Middle = ['buy a bicyle','fly a kite','eat too much','be better','pet a ca
 const End = ['today.','tomorrow.','every day.','forever.','for eternity.','or something.','or whatever.','if you want.'];
 
 //Define arrays for introductions.
-const Intro = ['The ancient ones have spoken!','The wisened ones grant us with knowledge!','Behold, the wisdom of the ancient ones!','Their voices bellow from the abyss!'];
+const Intro = ['The ancient ones have spoken!<br>','The wisened ones grant us with knowledge!<br>','Behold, the wisdom of the ancient ones!<br>','Their voices bellow from the abyss!<br>'];
 const Say = ['They say: ','They utter... ','They whisper to you: ','They bellow: '];
 
 /**
@@ -39,7 +39,7 @@ const GenerateWisdom = () => {
 
     //Assemble string using random word parts, and return the result.
     const wisdom = `${Intro[randIntro]}\n${Say[randSay]}${Beginning[randBeg]} ${Middle[randMid]} ${End[randEnd]}`;
-    return wisdom;
+    document.getElementById("wisdom-section").innerHTML = wisdom;
 }
 
 
